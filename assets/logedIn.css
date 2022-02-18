@@ -1,0 +1,83 @@
+.user-account .account-img {
+    width: 30px;
+    padding: 0 2px;
+    margin: 0 2px;
+}
+
+.user-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-account__name {
+    margin-top: 3px;
+    padding: 0 3px;
+}
+
+.user-account:hover {
+    cursor: pointer;
+
+}
+
+.choice-content::before {
+    content: "";
+	border-width: 20px 30px;
+	border-style: solid;
+	border-color: transparent transparent white transparent;
+	position: absolute;
+	top: -30px;
+	right: 25px;
+    z-index: -2;
+}
+
+.choice-content {
+    width: 150px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* text-align: center; */
+    position: relative;
+    background-color: #ffffff;
+    z-index: 999;
+    top: 35px;
+    right: 0;
+    box-shadow: 3px 4px 6px 0px black;
+}
+
+.choice-content__item {
+    display: block;
+    width: 100%;
+    line-height: 35px;
+    padding: 0 20px;
+
+}
+
+.choice-content__item:hover {
+    background-color: #969090c9;
+    color: white;
+}
+
+.choice-content__item:last-child {
+    color: rgb(14, 214, 214);
+}
+
+/* .choice-content__item:hover:last-child:hover {
+    color: rgb(247, 65, 10);
+} */
+
+
+.account-choice-wrapper {
+    position: absolute;
+    top: 0;
+    /* padding-top: 10px; */
+    display: block;
+    width: max-content;
+    height: max-content;
+    display: none;
+}
+
+.user-account:hover .account-choice-wrapper {
+    display: block;
+    animation: easeIn ease-in 0.2s;
+}
